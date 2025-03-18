@@ -10,7 +10,7 @@ import { WebDesignComponent } from './component/my-project/web-design/web-design
 export const routes: Routes = [
   {path : "all" , component:AllComponent},
   {path : "", component:AllComponent},
-  {path : "uiux", component:UiUxComponent},
+  {path : "ui-ux", component:UiUxComponent},
   {path : "web-design", component:WebDesignComponent},
   //{path:"" ,redirectTo :"/all "}
   ];

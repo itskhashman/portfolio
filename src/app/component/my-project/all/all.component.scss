@@ -1,0 +1,9 @@
+.card-img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-img:hover {
+  transform: scale(1.05); /* slightly enlarge the image */
+  filter: brightness(70%); /* darken the image */
+  cursor: pointer;
+}
