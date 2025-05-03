@@ -1,0 +1,83 @@
+<div id="contactme" *ngIf="!load.loading" class="container  ">
+    <div class="row d-flex justify-content-center py-5 mt-5">
+        <div class="col-12 d-flex justify-content-center text-dark">
+            <h2><strong class="text-nowrap ">{{"LETS_WORK_TOGETHER" | translate}}</strong></h2>
+        </div>
+        <div class="col-12 w-75 d-flex justify-content-center text-center text-dark">
+            <p>{{"DESC_5" | translate}}</p>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center pt-5 pb-3">
+            <button class="btn btn-warning " type="button" (click)="showdetails()">
+                {{"CONTACT_1" | translate}}
+            </button>
+        </div>
+
+
+        <div [ngClass]="{ 'show': details, 'hide': !details }" class="contact-box bg-light rounded text-start py-2"
+            style="width: fit-content;">
+            <div class="col-12 row  py-2 px-0 text-nowrap d-flex align-items-center">
+                <div class="col-1 px-2 "> <i class="responsive-font  bi bi-envelope-open text-warning"></i>
+                </div>
+                <div class="col-11 px-2"><a href="mailto:khashmanomar22@gmail.com"
+                        class="  text-nowrap text-decoration-none">
+                        <strong class="  responsive-font  text-dark m-0 px-2">khashmanomar22&#64;gmail.com</strong>
+                    </a></div>
+
+
+            </div>
+
+            <div class="col-12 row   py-2 px-0 text-nowrap d-flex align-items-center">
+                <div class="col-1 px-2 "> <i class="    responsive-font  bi bi-telephone-fill text-warning"></i>
+                </div>
+                <div class="col-11 px-2"><a href="tel:+962799732669" class="text-nowrap text-decoration-none">
+                        <strong class="text-dark responsive-font  px-2 m-0">{{"NUMBER" | translate}}</strong>
+                    </a></div>
+
+
+            </div>
+            <div class="col-12 row   py-2 px-0 text-nowrap d-flex align-items-center">
+                <div class="col-1 px-2 "> <i class="responsive-font  bi bi-geo-alt-fill text-warning"></i></div>
+                <div class="col-11 px-2"><a href="tel:+962799732669" class="text-nowrap text-decoration-none">
+                        <strong class="text-dark font-weight-bold responsive-font  m-0 px-2">{{"LOCATION" | translate}}</strong>
+                    </a></div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div *ngIf="load.loading" class="container  ">
+    <!-- header -->
+    <div class="row d-flex justify-content-center pt-5">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="placeholder " style=" width:500px ; height:75px ;"></div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center pt-2">
+            <div class="placeholder w-75 "></div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center py-1">
+            <div class="placeholder w-75 "></div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center">
+            <div class="placeholder w-50 "></div>
+        </div>
+    </div>
+    <!-- contact Box  -->
+
+    <div class="row d-flex justify-content-center  py-5">
+
+
+        <div class="col-12 text-center">
+            <div class="placeholder rounded" style="width: 104px;height: 37px;"></div>
+        </div>
+
+    </div>
+</div>

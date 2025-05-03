@@ -1,0 +1,318 @@
+<div id="Home">
+    <div *ngIf="!load.loading" class="d-none d-md-block ">
+        <div class="container" loading="lazy">
+            <div class="row d-flex   pt-5">
+                <div class="col-6">
+
+                    <div class="col-12  align-items-center text-start ">
+                        <h5 class="fs-5 text-dark  ">{{"HELLO" | translate}}</h5>
+                    </div>
+
+                    <div class="col-12  align-items-center text-start ">
+                        <h3 class="text-warning font-weight-bold ">{{"I_AM_OMAR" | translate}}</h3>
+                    </div>
+
+                    <div class="col-12  mb-0 text-start">
+                        <strong>
+                            <p class="text-dark fs-2 font-weight-bold">{{"FRONT_EN" | translate}}<span
+                                    class="text-warning">{{"D" | translate}}</span><br>{{"DEVLOPE" | translate}}<span
+                                    class="text-warning">{{"R" | translate}}</span></p>
+                        </strong>
+                    </div>
+
+                    <div class="col-12 text-start ">
+                        <p class="text-dark   ">
+                            {{'DESC_1' |translate}}
+                            <span class="text-warning ">{{'VERY_GOOD_GPA' | translate}}</span>. {{ 'DESC_2' |
+                            translate}}<span class="text-warning">{{'MACQUIRES' | translate}}</span> {{'DESC_3' |
+                            translate}} {{'DESC_4' |translate}}
+                        </p>
+                    </div>
+
+                    <div class="col-12 align-items-center text-start d-sm-none d-md-block mt-2">
+                        <button class="btn btn-warning text-nowrap" (click)="navigateToContact()">{{'CONTACT'
+                            |translate}}</button>
+                    </div>
+                </div>
+
+                <div class="col-6 row m-0 p-0">
+                    <div class="col-12 pb-2 d-flex align-items-center">
+                        <div class="d-flex position-relative justify-content-center">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFIPgoQ6u3o8w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724674369638?e=1747872000&v=beta&t=fpJ0W76_UPlq8qYSI_gkgUhebQP7_pi68xPmx193Y54" alt="Profile Image"
+                                class="bg-secondary border-custom rounded-circle custom-width" >
+                        </div>
+                    </div>
+
+                    <div class="col-4"></div>
+                    <div class="col-1 text-center text-dark ">
+                        <a href="https://www.Facebook.com/okhashman">
+                            <i class="to-hover bi bi-facebook text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="col-1 text-center">
+                        <a href="https://www.linkedin.com/in/omar-khashman-a54688263">
+                            <i class="to-hover bi bi-linkedin text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="col-1 text-center">
+                        <a href="https://x.com/itskhashman10">
+                            <i class="to-hover bi bi-twitter-x text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="col-1 text-center">
+                        <a href="https://www.instagram.com/itskhashman/">
+                            <i class="to-hover bi bi-instagram text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="col-4"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div *ngIf="!load.loading" class="d-md-none pt-0  ">
+        <div class="container ">
+
+            <div class="row ">
+
+                <div class="col-12 ">
+
+                    <div class="col-12 pb-2 d-flex  align-items-center ">
+                        <div class=" d-flex position-relative justify-content-center">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFIPgoQ6u3o8w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724674369638?e=1747872000&v=beta&t=fpJ0W76_UPlq8qYSI_gkgUhebQP7_pi68xPmx193Y54" alt="Profile Image"
+                                class="W-25 border-custom rounded-circle   ">
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="col-1 text-center text-dark">
+                            <a href="https://www.Facebook.com/okhashman">
+                                <i class="to-hover bi bi-facebook text-dark"></i>
+                            </a>
+                        </div>
+                        <div class="col-1 text-center">
+                            <a href="https://www.linkedin.com/in/omar-khashman-a54688263">
+                                <i class="to-hover bi bi-linkedin text-dark"></i>
+                            </a>
+                        </div>
+                        <div class="col-1 text-center">
+                            <a href="https://x.com/itskhashman10">
+                                <i class="to-hover bi bi-twitter-x text-dark"></i>
+                            </a>
+                        </div>
+                        <div class="col-1 text-center">
+                            <a href="https://www.instagram.com/itskhashman/">
+                                <i class="to-hover bi bi-instagram text-dark"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12">
+
+                    <div class="col-12  align-items-center text-start">
+                        <h5 class="fs-5 text-dark ">{{"HELLO" | translate}}</h5>
+                    </div>
+
+                    <div class="col-12  align-items-center text-start">
+                        <h3 class="text-warning font-weight-bold ">{{"I_AM_OMAR" | translate}}</h3>
+                    </div>
+
+                    <div class="col-12  mb-0 text-start">
+                        <strong>
+                            <p class="text-dark fs-2 font-weight-bold">{{"FRONT_EN" | translate}}<span
+                                    class="text-warning">{{"D" | translate}}</span><br>{{"DEVLOPE" | translate}}<span
+                                    class="text-warning">{{"R" | translate}}</span></p>
+                        </strong>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="col-12 mt-1 text-start">
+                <p class="text-dark ">
+                    {{'DESC_1' |translate}}
+                    <span class="text-warning">{{'VERY_GOOD_GPA' | translate}}</span>. {{ 'DESC_2' | translate}}<span
+                        class="text-warning">{{'MACQUIRES' | translate}}</span> {{'DESC_3' | translate}}{{'DESC_4'
+                    |translate}}
+                </p>
+            </div>
+            <div class="col-12 text-start align-items-center  mt-2 ">
+                <button class="btn btn-warning text-nowrap" (click)="navigateToContact()">{{'CONTACT'
+                            |translate}}</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</div>
+<!-- -->
+
+<div *ngIf="load.loading" class="d-none d-md-block ">
+    <div class="container">
+        <div class="row pt-5 h-50 ">
+
+            <div class="col-6 align-items-stretch">
+
+                <div class="col-12 ">
+                    <div class="placeholder" style="width: 8%;"></div>
+                </div>
+
+                <div class="col-12 my-2 ">
+                    <div class="placeholder w-25"></div>
+                </div>
+
+                <div class="col-12  ">
+                    <div class="placeholder w-50" style="height: 50px;"></div>
+                </div>
+                <div class="col-12 my-2  ">
+                    <div class="placeholder w-50" style="height: 50px;"></div>
+                </div>
+
+
+
+                <div class="col-12   ">
+                    <div class="placeholder w-100"></div>
+                </div>
+                <div class="col-12 my-1   ">
+                    <div class="placeholder w-100"></div>
+                </div>
+                <div class="col-12   ">
+                    <div class="placeholder w-50"></div>
+                </div>
+
+                <div class="col-3 d-flex align-items-center d-sm-none d-md-block  mt-2 ">
+                    <div class="col-12">
+                        <div class="placeholder " style="height: 28px;width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 align-items-stretch">
+
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="d-flex position-relative ">
+                        <div class="placeholder px-2 rounded-circle d-flex position-relative justify-content-center"
+                            style="height:350px; width: 350px;"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                    <div class="col-4"></div>
+                    <div class="col-1 px-1">
+                        <div class="placeholder w-75 "></div>
+                    </div>
+                    <div class="col-1 px-1">
+                        <div class="placeholder w-75 "></div>
+                    </div>
+                    <div class="col-1 px-1">
+                        <div class="placeholder w-75"></div>
+                    </div>
+                    <div class="col-1 px-1">
+                        <div class="placeholder w-75 "></div>
+                    </div>
+
+                    <div class="col-4"></div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<div *ngIf="load.loading" class="d-md-none">
+    <div class="container pt-5">
+
+        <div class="row">
+
+            <div class="col-12">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="d-flex position-relative ">
+                        <div class="placeholder px-2 rounded-circle d-flex position-relative justify-content-center"
+                            style="height:250px; width: 250px;"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex align-items-center justify-content-center pt-2">
+                    <div class="col-4"></div>
+                    <div class="col-1 px-1">
+                        <div class="placeholder w-75 "></div>
+                    </div>
+                    <div class="col-1 px-1">
+                        <div class="placeholder w-75 "></div>
+                    </div>
+                    <div class="col-1 px-1">
+                        <div class="placeholder w-75"></div>
+                    </div>
+                    <div class="col-1 px-1">
+                        <div class="placeholder w-75 "></div>
+                    </div>
+
+                    <div class="col-4"></div>
+                </div>
+
+            </div>
+
+            <div class="col-12 mt-2">
+
+                <div class="col-12 d-flex align-items-center ">
+                    <div class="placeholder" style="width: 10%;"></div>
+                </div>
+
+                <div class="col-12 d-flex align-items-center mt-2 ">
+                    <div class="placeholder" style="width: 25%;"></div>
+                </div>
+
+                <div class="col-12 d-flex align-items-center mt-2 ">
+                    <div class="placeholder" style="width: 40%;height: 40px;"></div>
+                </div>
+
+                <div class="col-12 d-flex align-items-center mt-2 ">
+                    <div class="placeholder" style="width: 40%;height: 40px;"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12 mt-1">
+            <div class="placeholder w-100"></div>
+            <div class="placeholder w-100"></div>
+            <div class="placeholder w-100"></div>
+            <div class="placeholder w-50"></div>
+
+        </div>
+        <div class="col-3 d-flex align-items-center  mt-2 ">
+            <div class="placeholder w-75" style="height: 25px;"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>

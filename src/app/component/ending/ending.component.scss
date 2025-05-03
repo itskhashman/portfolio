@@ -1,0 +1,30 @@
+@import 'animate.css';
+@import "../Shared/assets/variables.scss";
+
+body.dark-mode{
+  @import "../Shared/assets/variables.scss";
+}
+
+body.light-mode{
+  @import "../Shared/assets/light-theme.scss";
+}
+
+
+.container{
+  max-width: 100%;
+}
+
+
+.to-hover {
+  transition: transform 0.1s ease-in-out 0.1s, color 0.1s ease-in-out 0.1s, font-size 0.1s ease-in-out 0.1s; /* 0.2s delay */
+}
+
+.to-hover:hover {
+  color: $warning !important; 
+  transform: scale(1.2); 
+  font-size: 18px ;
+}
+
+
+
+/* About Me  */

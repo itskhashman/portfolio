@@ -1,0 +1,64 @@
+
+body.light-mode {
+    @import "../src/app/component/Shared/assets/light-theme.scss";
+    
+}
+
+body.dark-mode {
+    @import "../src/app/component/Shared/assets/dark-theme.scss";
+}
+
+
+
+@import "../src/app/component/Shared/assets/variables.scss";
+
+@import "bootstrap/scss/bootstrap.scss";
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+
+.container {
+    max-width: 80%;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+.placeholder {
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    color: transparent;
+    /* Hide text to represent loading state */
+    border-radius: 4px;
+    /* Rounded corners */
+    width: 100%;
+    /* Adjusts width based on content */
+    height: 100%;
+    /* Placeholder height */
+    background-size: 200% 100%;
+    /* To make the wave stretch and move */
+    animation: wave 1.5s ease-in-out infinite;
+    /* Smooth wave animation */
+    z-index: 99;
+}
+
+/* Keyframes for the wave animation */
+@keyframes wave {
+    0% {
+        background-position: 200% 0;
+        /* Start position (right) */
+    }
+
+    100% {
+        background-position: -200% 0;
+        /* End position (left) */
+    }
+}
+
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}

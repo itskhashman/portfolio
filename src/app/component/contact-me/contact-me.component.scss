@@ -1,0 +1,39 @@
+  @import "../Shared/assets/variables.scss";
+
+
+ /* Base styles for the contact box */
+.contact-box {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 1s ease;
+}
+
+/* When the element is visible */
+.contact-box.show {
+  max-height: 300px; /* Adjust this height according to your content */
+  opacity: 1;
+}
+
+/* When the element is hidden */
+.contact-box.hide {
+  max-height: 0;
+  opacity: 0;
+}
+
+.responsive-font {
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  .responsive-font {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  .responsive-font {
+    font-size: 18px;
+  }
+}
+

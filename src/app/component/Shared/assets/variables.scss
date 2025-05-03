@@ -1,0 +1,70 @@
+// Step 1: Define your primary color palette
+  $primary: #0d6efd;
+  $secondary: #6c757d;
+  $success: #198754;
+  $danger: #dc3545;
+  $warning: #FD6F00;
+  $info: #0dcaf0;
+  $light: #F8F8F8;
+
+  $dark: #000000;
+  $wight: #ffffff;
+
+  // Step 2: Define additional custom colors
+  $body-bg: #ffffff;
+  $body-color: #000000;
+  $link-color: $primary;
+  $link-hover-color: darken($primary, 10%);
+
+  $font-size-base: 1rem; // Assumes the browser default, typically `16px`
+
+  $h1-font-size: $font-size-base * 6;
+  $h2-font-size: $font-size-base * 3.5;
+  $h3-font-size: $font-size-base * 1.75;
+  $h4-font-size: $font-size-base * 1.5;
+  $h5-font-size: $font-size-base * 0.75;
+  $h6-font-size: $font-size-base;
+
+  // Step 3: Override Bootstrap variables
+  $theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "danger": $danger,
+    "warning": $warning,
+    "info": $info,
+    "light": $light,
+    "dark": $dark,
+    "body-bg":$body-bg
+  );
+
+$background-colors: (
+  "primary": lighten($primary, 40%),
+  "secondary": lighten($secondary, 40%),
+  "success": lighten($success, 40%),
+  "danger": lighten($danger, 40%),
+  "warning": ($warning),
+  "info": lighten($info, 40%),
+  "light": $light,
+  "dark": lighten($dark, 20%)
+);
+
+$border-colors: (
+  "primary": darken($primary, 20%),
+  "secondary": darken($secondary, 20%),
+  "success": darken($success, 20%),
+  "danger": darken($danger, 20%),
+  "warning": darken($warning, 20%),
+  "info": darken($info, 20%),
+  "light": darken($light, 10%),
+  "dark": darken($dark, 20%)
+);
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+);

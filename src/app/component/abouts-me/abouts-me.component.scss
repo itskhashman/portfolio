@@ -1,0 +1,125 @@
+@import "../Shared/assets/variables.scss";
+
+.skill{
+  width: 100%;
+  max-width: 600px;
+  padding : 0px 20px;
+}
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  color: $body-color;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.skill-bar{
+  height: 10px;
+  background: white;
+  border-radius: 25px;
+}
+.skill-per{
+  border-radius: 25px;
+  height: 10px;
+  background-color:$warning;
+  animation: fillbars 7s;
+}
+@keyframes fillbars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+
+}
+
+.border-custom{
+  border: 4px solid $warning; /* 5px border width with blue color */
+    width: 50%;
+    border-radius: 50% !important;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.custom-width {
+  width: 100%; /* Full width by default */
+}
+
+@media (min-width:1100px) {
+  .custom-width {
+      width: 75%; /* 25% width on large screens (≥992px) */
+  }
+}
+
+@media (min-width:1650px) {
+  .custom-width {
+      width: 50%; /* 25% width on large screens (≥992px) */
+  }
+}
+@media (min-width:2250px) {
+  .custom-width {
+      width: 35%; /* 25% width on large screens (≥992px) */
+  }
+}
+
+.svg-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-frame svg {
+  position: absolute;
+  transition: .5s;
+  z-index: calc(1 - (0.2 * var(--j)));
+  transform-origin: center;
+  width: 344px;
+  height: 344px;
+  fill: none;
+}
+
+.svg-frame:hover svg {
+  transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+}
+
+.svg-frame svg #center {
+  transition: .5s;
+  transform-origin: center;
+}
+
+.svg-frame:hover svg #center {
+  transform: rotate(-30deg) translateX(45px) translateY(-3px);
+}
+
+#out2 {
+  animation: rotate16 7s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#out3 {
+  animation: rotate16 3s ease-in-out infinite alternate;
+  transform-origin: center;
+  stroke: $warning;
+}
+
+#inner3,
+#inner1 {
+  animation: rotate16 4s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#center1 {
+  fill: $warning;
+  animation: rotate16 2s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes rotate16 {
+  to {
+    transform: rotate(360deg);
+  }
+}

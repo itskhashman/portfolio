@@ -1,0 +1,55 @@
+@import "../Shared/assets/variables.scss";
+
+:focus {
+    outline: 0;
+    border-color: $warning;
+    box-shadow: 0 0 0 2px $warning; /* Reduced box-shadow size */
+  }
+  
+  .mydict div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.25rem; /* Reduced margin */
+    justify-content: center;
+  }
+  
+  .mydict input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .mydict input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.05em $warning; /* Slightly reduced shadow size */
+    background-color: #fd6e00e9;
+    z-index: 1;
+    color: $dark;
+  }
+  
+  label span {
+    display: block;
+    cursor: pointer;
+    background-color: $body-bg;
+    padding: 0.25em 0.5em; /* Reduced padding */
+    position: relative;
+    margin-left: 0.05em; /* Reduced margin */
+    box-shadow: 0 0 0 0.05em $warning; /* Slightly reduced shadow size */
+    letter-spacing: 0.03em; /* Reduced letter spacing */
+    font-size: 0.85em; /* Reduced font size */
+    color: $dark;
+        text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  label:first-child span {
+    border-radius: 0.25em 0 0 0.25em; /* Reduced border radius */
+  }
+  
+  label:last-child span {
+    border-radius: 0 0.25em 0.25em 0; /* Reduced border radius */
+  }
+  

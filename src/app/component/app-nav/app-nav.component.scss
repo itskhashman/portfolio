@@ -1,0 +1,111 @@
+@import "../Shared/assets/variables.scss";
+
+
+body.light-mode{
+  @import "../Shared/assets/light-theme.scss";
+}
+
+.text-button {
+  background: none; /* Removes background */
+  border: none; /* Removes border */
+  color: inherit; /* Inherits the text color from the parent element */
+  font: inherit; /* Inherits the font family, size, and weight */
+  cursor: pointer; /* Makes the cursor a pointer when hovering */
+  padding: 0; /* Removes any padding */
+  text-decoration: none; /* Removes any text underline */
+}
+
+.text-button:focus {
+  outline: none; /* Removes focus outline */
+}
+
+.text {
+  font-size: 22px !important;
+  font-weight: bolder !important;
+  cursor: pointer;
+  transition: 1.5s ease;
+}
+
+@media (min-width: 600px) {
+  .text {
+    font-size: 20px  !important;
+  }
+}
+
+
+/* Backdrop to disable interactions with the rest of the page */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 99; /* Place it below the sidebar but above the page content */
+}
+
+#sidebar {
+  position: fixed;
+  height: 100%;
+  z-index: -1;
+  background-color: $warning; 
+  right: 0;
+  top: 0;
+  transition: width 1s ease;
+  width: 0; 
+}
+
+#sidebar.show {
+  width: 50%; 
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+
+#sidebar.hide {
+  width: 0; 
+  z-index: -1;
+}
+
+#sidebar li{
+  display: flex;
+  color: $body-bg;
+  padding: 20px;
+  padding-left: 0px;
+  border-bottom: 1px solid ;
+  border-color: $body-bg;
+  text-align: left;
+}
+
+
+.to-hover {
+  transition: transform 0.05s ease-in-out 0.05s, color 0.05s ease-in-out 0.05s; /* 0.2s delay */
+}
+
+.to-hover:hover {
+  color: $warning !important; /* Change to the desired color on hover */
+  transform: scale(1.2); /* Increases size by 20% */
+}
+
+.typewriter h4 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}

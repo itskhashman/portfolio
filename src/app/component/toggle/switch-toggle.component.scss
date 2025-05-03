@@ -1,0 +1,39 @@
+@import "../Shared/assets/variables.scss";/* From Uiverse.io by vinodjangid07 */ 
+#checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
+}
+.switch svg {
+  width: 1.2em;
+}
+.switch svg path {
+  fill:$warning;
+}
+#checkbox:checked + .switch {
+  box-shadow: 0px 0px 1px $warning inset,
+    0px 0px 2px $warning inset, 0px 0px 10px $warning inset,
+    0px 0px 40px $warning, 0px 0px 100px $warning,
+    0px 0px 5px $warning;
+  border: 2px solid$warning;
+  background-color: $warning;
+}
+#checkbox:checked + .switch svg {
+  filter: drop-shadow(0px 0px 5px $warning);
+}
+#checkbox:checked + .switch svg path {
+  fill: rgb(255, 255, 255);
+}

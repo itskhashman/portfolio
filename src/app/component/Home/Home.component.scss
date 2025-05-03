@@ -1,0 +1,75 @@
+@import "../Shared/assets/variables.scss";
+
+.border-custom {
+  border: 5px solid $warning;
+  /* 5px border width with blue color */
+  width: 80%;
+
+  box-shadow: 0px 0px 1px $warning inset,
+    0px 0px 1px $warning inset, 0px 0px 10px $warning inset,
+    0px 0px 30px $warning, 0px 0px 80px $warning,
+    0px 0px 3px $warning;
+  background-color: $warning;
+}
+
+.custom-width {
+  width: 100%;
+  /* Full width by default */
+}
+
+@media (min-width:1100px) {
+  .custom-width {
+    width: 70%;
+    /* 25% width on large screens (≥992px) */
+  }
+}
+
+@media (min-width:1650px) {
+  .custom-width {
+    width: 50%;
+    /* 25% width on large screens (≥992px) */
+  }
+}
+
+@media (min-width:2250px) {
+  .custom-width {
+    width: 30%;
+    /* 25% width on large screens (≥992px) */
+  }
+}
+
+.to-hover {
+  transition: transform 0.05s ease-in-out 0.05s, font-size 0.05s ease-in-out 0.05s;
+  /* 0.2s delay */
+}
+
+.to-hover:hover {
+  color: $warning !important;
+  transform: scale(1.2);
+  font-size: 18px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter  {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}

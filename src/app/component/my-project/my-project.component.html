@@ -1,0 +1,138 @@
+<div *ngIf="!load.loading" id="Projects" class="container ">
+
+    <div class="row d-flex justify-content-center pt-5 mt-5  ">
+        <div class="col-12 d-flex justify-content-center text-dark">
+            <h2><strong>{{'PROJECTS'|translate}}</strong></h2>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-12 col-md-6 d-flex justify-content-center text-center text-dark">
+            <p>{{'DESC_5' |translate}}</p>
+        </div>
+        <div class="col-2 "></div>
+    </div>
+
+    <div class="row gy-3 pb-3 d-flex justify-content-center gap-1">
+        <div class="col-auto">
+            <p type="button"  checked="" routerLink="all" routerLinkActive="active-button" class="btn btn-outline-warning ">{{'ALL' | translate}}</p>
+        </div>
+        <!-- <div class="col-auto">
+            <button type="button" routerLink="uiux" routerLinkActive="active-button"
+                class="btn btn-outline-warning">{{'UI_UX' | translate}}</button>
+        </div> -->
+        <div class="col-auto">
+            <button type="button" routerLink="web-design" routerLinkActive="active-button"
+                class="btn btn-outline-warning text-nowrap">{{'PORTFOLIO' | translate}}</button>
+        </div>
+    </div>
+
+
+    <router-outlet></router-outlet>
+
+</div>
+
+<div *ngIf="load.loading" class="container ">
+
+    <!-- header -->
+    <div class="row d-flex justify-content-center pt-5">
+        <div class="col-12 d-flex justify-content-center">
+           <div class="placeholder " style=" width:214px ; height:75px ;"></div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center pt-2">
+            <div class="placeholder " style=" width: 500px; "></div>
+         </div>
+
+         <div class="col-12 d-flex justify-content-center py-1">
+            <div class="placeholder " style=" width: 500px; "></div>
+         </div>
+
+         <div class="col-12 d-flex justify-content-center">
+            <div class="placeholder " style=" width: 250px; "></div>
+         </div>
+    </div>
+
+    <!-- choose project type -->
+    <div class="row gy-3 pb-3 d-flex justify-content-center gap-1 pt-3">
+        <div class="col-auto">
+           <div class="placeholder" style="width: 67px;height: 37px;"></div>
+        </div>
+        <div class="col-auto">
+            <div class="placeholder" style="width: 67px;height: 37px;"></div>
+
+        </div>
+        <div class="col-auto">
+            <div class="placeholder" style="width: 67px;height: 37px;"></div>
+
+        </div>
+    </div>
+
+
+
+    <!-- go to compoanant projec-type -->
+    <div class="row gx-3 gy-3 justify-content-center">
+
+       
+
+        <div class="col-12 col-md-6 col-lg">
+            <div class="p-4 pl-0 border  rounded">
+                <div class="row">
+                    <div class="col-12  text-center">
+                        <div class="placeholder w-100" style="height: 150px;"></div>
+                    </div>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center mb-2 ">
+                    <div class="col-4">
+                        <div class="placeholder w-100"></div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12">
+                        <div class="placeholder w-100"></div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center my-1">
+                    <div class="col-12">
+                        <div class="placeholder w-100"></div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12">
+                        <div class="placeholder w-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg">
+            <div class="p-4 pl-0 border  rounded">
+                <div class="row">
+                    <div class="col-12  text-center">
+                        <div class="placeholder w-100" style="height: 150px;"></div>
+                    </div>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center mb-2 ">
+                    <div class="col-4">
+                        <div class="placeholder w-100"></div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12">
+                        <div class="placeholder w-100"></div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center my-1">
+                    <div class="col-12">
+                        <div class="placeholder w-100"></div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12">
+                        <div class="placeholder w-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

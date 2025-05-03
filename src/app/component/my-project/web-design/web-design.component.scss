@@ -1,0 +1,9 @@
+.hover-zoom {
+    transition: transform 0.3s ease; /* Smooth animation */
+    cursor: pointer; /* Hand cursor on hover */
+  }
+  
+  .hover-zoom:hover {
+    transform: scale(1.05); /* Slightly zoom the image */
+  }
+  
