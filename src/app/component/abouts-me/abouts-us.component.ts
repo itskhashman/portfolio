@@ -11,27 +11,26 @@ import { LoadingService } from '../Shared/assets/loading/loading.service';
 export class AboutmeComponent {
   loading =true;
 
-  myskills: skills[] = [{
-    name: "HTML-5",
-    score: "30%",
-  }, {
-    name: "Angular-Rxjs",
+  myskills: skills[] = [ {
+    name: "Angular - 18+",
     score: "50%",
-  }, {
-    name: "Team leading",
-    score: "70%",
   },{
-    name: "Angular-Rxjs",
-    score: "50%",
+    name: "HTML5 - CSS - Typescript",
+    score: "70%",
+  }, {
+    name: "C++ - Java - python",
+    score: "40%",
+  },{
+    name: "SQL - API Integrations",
+    score: "40%",
   }, 
   {
-    name: "CSS-bootstrap",
-    score: "90%",
-  },
-  {
-    name: "CSS Animation",
+    name: "OOP (Java)",
     score: "80%",
-  },
+  },{
+    name: "Proplem solving - Algorithms",
+    score: "60%",
+  }
 ];
 
 constructor(public load:LoadingService){
